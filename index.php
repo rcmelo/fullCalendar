@@ -28,6 +28,7 @@ $resultado_events = mysqli_query($conn, $result_events);
 					eventLimit: true, // allow "more" link when too many events
 					events: [
 						<?php
+						// Loop de repetição, buscando resultado...
 							while($row_events = mysqli_fetch_array($resultado_events)){
 								?>
 								{
